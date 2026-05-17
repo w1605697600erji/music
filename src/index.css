@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", var(--font-sans);
+
+  /* Brand Colors from Design System */
+  --color-primary: #031631;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1a2b47;
+  --color-on-primary-container: #8293b4;
+  
+  --color-secondary: #0058bc;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #0070eb;
+  --color-on-secondary-container: #fefcff;
+  
+  --color-background: #f9f9ff;
+  --color-on-background: #151c27;
+  
+  --color-surface: #f9f9ff;
+  --color-on-surface: #151c27;
+  --color-surface-variant: #dce2f3;
+  --color-on-surface-variant: #44474d;
+  
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f0f3ff;
+  --color-surface-container: #e7eefe;
+  --color-surface-container-high: #e2e8f8;
+  --color-surface-container-highest: #dce2f3;
+
+  --color-outline: #75777e;
+  --color-outline-variant: #c5c6ce;
+
+  --color-secondary-fixed: #d8e2ff;
+  --color-secondary-fixed-dim: #adc6ff;
+
+  /* Spacing */
+  --spacing-unit: 8px;
+  --spacing-container-mobile: 24px;
+  --spacing-container-desktop: 48px;
+  
+  /* Border Radius */
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-3xl: 3rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background antialiased font-sans;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20;
+  }
+  
+  .glass-dark {
+    @apply bg-primary/10 backdrop-blur-xl border border-white/10;
+  }
+
+  .ambient-shadow {
+    box-shadow: 0 30px 60px -15px rgba(3, 22, 49, 0.08);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');

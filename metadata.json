@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Pure",
+  "description": "A premium, minimalist music streaming application focused on visual silence and high-fidelity audio aesthetics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
